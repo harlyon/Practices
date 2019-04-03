@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "rents",
+  "collectionName": "sales",
   "info": {
-    "name": "rent",
+    "name": "sale",
     "description": ""
   },
   "options": {
@@ -11,23 +11,27 @@
     "comment": ""
   },
   "attributes": {
-    "description": {
+    "title": {
       "default": "",
       "type": "string"
     },
-    "address": {
+    "description": {
       "default": "",
-      "type": "string"
+      "type": "text"
     },
     "city": {
       "default": "",
       "type": "string"
     },
-    "country": {
+    "address": {
       "default": "",
-      "type": "string"
+      "type": "text"
     },
     "bedroom": {
+      "default": "",
+      "type": "integer"
+    },
+    "bathroom": {
       "default": "",
       "type": "integer"
     },
@@ -35,27 +39,9 @@
       "default": "",
       "type": "integer"
     },
-    "image": {
-      "collection": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
-    "title": {
-      "default": "",
-      "type": "string"
-    },
-    "bathroom": {
-      "default": "",
-      "type": "integer"
-    },
     "price": {
       "default": "",
-      "type": "string"
-    },
-    "type": {
-      "default": "",
-      "type": "string"
+      "type": "integer"
     }
   }
 }

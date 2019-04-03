@@ -44,6 +44,22 @@ body {
   background-image: url('http://giftechies.com/samar-real-estate/theme/img/slider/3.jpg') !important;
 }
 
+.section-padding {
+  padding: 50px 0;
+}
+
+.section-title h2 {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.line {
+  height: 3px;
+  background: #ff6633;
+  width: 12%;
+  margin: auto;
+}
+
 /* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -75,9 +91,121 @@ body {
   }
 } */
 
+/*--------------------------Card Styles----------------------------------------*/
+
+.card {
+  border: medium none;
+  box-shadow: 0 5px 7px #e0e5e8;
+  margin-bottom: 30px;
+  border-radius: 70px;
+  text-align: center;
+}
+
+.card-img {
+  position: relative;
+}
+
+.card-img-top {
+  border: 1px solid #f8f8f8;
+  padding: 5px;
+  border-radius: 30px;
+  width: 100%;
+  height: 220px;
+}
+
+.images-badge {
+  background: #fff none repeat scroll 0 0;
+  color: #ff6633;
+  font-size: 16px;
+  left: 20px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.22);
+  position: absolute;
+  right: auto !important;
+  z-index: 9;
+}
+
+.card-list {
+  border-radius: 35px;
+}
+
+.card-list .badge {
+  border-radius: 50px;
+  top: 20px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.22);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 6px 8px;
+  position: absolute;
+  right: 20px;
+  z-index: 9;
+}
+
+.card-list .card-body h2 {
+  font-size: 20px;
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  line-height: 39px;
+  margin-top: -49px !important;
+  z-index: 999999999;
+  position: relative;
+}
+
+.card-list .card-body .card-title {
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+.card-list .card-body .card-subtitle {
+  font-size: 13px;
+  font-weight: 500 !important;
+  color: #a7a7a7 !important;
+}
+
+.card-list .card-body .card-subtitle i {
+  color: #ff6633;
+  display: inline-block;
+  height: 20px;
+  line-height: 21px;
+  margin: 0 4px 0 0;
+  text-align: center;
+  width: 20px;
+  font-size: 20px;
+}
+
+.card-list .card-body h2 small {
+  font-size: 17px;
+}
+
+.card-list .card-footer span {
+  color: #666666;
+  font-size: 12px;
+  margin: 0 16px 0 0;
+}
+
+.card-list .card-footer span i {
+  color: #000;
+  margin: 0 2px 0 0;
+}
+
+.card-footer {
+  background: #ffffff none repeat scroll 0 0;
+  border-color: #eeeeee;
+  border-bottom: 2px solid #ffffff;
+}
+
+/*--------------------------Card Styles Ends-----------------------------------*/
+
 .bg-light {
   background-color: #fff !important;
   box-shadow: 0 5px 6px rgba(207, 216, 221, 0.38) !important;
+  z-index: 999;
+}
+
+.bg-danger {
+  background-color: #003366 !important;
+  /* border-radius: 51px;
+  margin: 25px auto; */
+  position: absolute;
   z-index: 999;
 }
 
