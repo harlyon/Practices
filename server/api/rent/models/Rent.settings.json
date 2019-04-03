@@ -1,0 +1,57 @@
+{
+  "connection": "default",
+  "collectionName": "rents",
+  "info": {
+    "name": "rent",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "description": {
+      "default": "",
+      "type": "string"
+    },
+    "address": {
+      "default": "",
+      "type": "string"
+    },
+    "city": {
+      "default": "",
+      "type": "string"
+    },
+    "country": {
+      "default": "",
+      "type": "string"
+    },
+    "bedroom": {
+      "default": "",
+      "type": "integer"
+    },
+    "garage": {
+      "default": "",
+      "type": "integer"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "bathroom": {
+      "default": "",
+      "type": "integer"
+    },
+    "price": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}
