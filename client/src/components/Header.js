@@ -5,37 +5,37 @@ class Header extends Component {
 
   render() {
     return (
-      <section class="samar-slider">
+      <section className="samar-slider">
         <Navbar />
-        <div id="samarslider" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-               <li data-target="#samarslider" data-slide-to="0" class="active"></li>
+        <div id="samarslider" className="carousel slide" data-ride="carousel">
+            <ol className="carousel-indicators">
+               <li data-target="#samarslider" data-slide-to="0" className="active"></li>
                <li data-target="#samarslider" data-slide-to="1"></li>
                <li data-target="#samarslider" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner" role="listbox">
-               <div class="carousel-item active slider-one">
-                  <div class="overlay"></div>
+            <div className="carousel-inner" role="listbox">
+               <div className="carousel-item active slider-one">
+                  <div className="overlay"></div>
                </div>
-               <div class="carousel-item slider-two">
-                  <div class="overlay"></div>
+               <div className="carousel-item slider-two">
+                  <div className="overlay"></div>
                </div>
-               <div class="carousel-item slider-three">
-                  <div class="overlay"></div>
+               <div className="carousel-item slider-three">
+                  <div className="overlay"></div>
                </div>
             </div>
-            <a class="carousel-control-prev" href="#samarslider" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <a className="carousel-control-prev" href="#samarslider" role="button" data-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#samarslider" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <a className="carousel-control-next" href="#samarslider" role="button" data-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="sr-only">Next</span>
             </a>
          </div>
         <div className="slider-form">
-        <h2 class="text-left mb-1 text-white d-none d-sm-block">Find Your Dream Home</h2>
-        <p class="text-white mb-5 d-none d-sm-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard <br/>dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <h2 className="text-left mb-1 text-white d-none d-sm-block">Find Your Dream Home</h2>
+        <p className="text-white mb-5 d-none d-sm-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard <br/>dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
     {/* //   <header className="masthead text-white text-center">
     //   <div className="overlay" />
     //   <div className="container">

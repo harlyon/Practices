@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Properties extends Component {
+class Index extends Component {
   render() {
     return (
       <div>
@@ -10,4 +10,4 @@ class Properties extends Component {
   }
 }
 
-export default Properties;
+export default Index;

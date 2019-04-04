@@ -19,10 +19,15 @@ const Navbar = () => {
                   <a className="nav-link" href="/">
                     HOME
                   </a>
+                  </li>
+                  <li className="nav-item">
+                  <a className="nav-link" href="/properties">
+                    ALL PROPERTIES
+                  </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/">
-                    TO RENT
+                    FOR RENT
                   </a>
                 </li>
                 <li className="nav-item">
@@ -36,9 +41,6 @@ const Navbar = () => {
                   <li className="list-inline-item">
                     <a className="btn btn btn-outline-primary btn-sm" href="/login"><i className="mdi mdi-account-outline" /> Log In</a>
                   </li>
-                  {/* <li className="list-inline-item">
-                    <a className="btn btn-primary btn-sm" href="register.html"><i className="mdi mdi-security-account" /> Sign Up</a>
-                  </li> */}
                 </ul>
               </div>
             </div>
