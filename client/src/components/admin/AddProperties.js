@@ -1,12 +1,37 @@
 import React, { Component } from 'react';
-import SideBar from './SideBar';
+import { Redirect } from "react-router-dom";
+import fire from '../../config/fire';
+import Nav from './Nav';
+import Login from '../Login';
 
 class AddProperties extends Component {
+  state = {
+    user: {}
+  }
+
+  componentDidMount() {
+    this.authListener();
+  }
+
+  authListener() {
+    fire.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({ user });
+      } else {
+        this.setState({ user: null });
+      }
+    })
+  }
+
   render() {
     return (
       <div>
-        <section class="section-padding">
-          <SideBar />
+        <Nav />
+        <br /><br /><br /><br />
+        {
+        this.state.user ?
+            (
+        <section className="section-padding">
         <div className="col-lg-12 col-md-12">
             <form>
             <div className="col-lg-5 col-md-5 mx-auto">
@@ -59,20 +84,27 @@ class AddProperties extends Component {
                   <input type="text" className="form-control" placeholder="Enter Price Label" />
                 </div>
               </div>
-                  <div class="col-md-12">
-                    <div class="fuzone">
-                      <div class="fu-text">
-                          <span><i class="mdi mdi-image-area"></i> Click here or drop files to upload</span>
+                  <div className="col-md-12">
+                    <div className="fuzone">
+                      <div className="fu-text">
+                          <span><i className="mdi mdi-image-area"></i> Click here or drop files to upload</span>
                       </div>
-                      <input class="upload" type="file" />
+                      <input className="upload" type="file" />
                     </div>
                 </div>
-            </div>
+              </div>
                 </div>
                 </div>
-            </form></div>
+            </form>
+          </div>
           </section>
+          ) : (
+        <Login />
+        )}
       </div>
+      // <div>
+      //   <Nav />
+      //   <br /><br /><br /><br /><br />
     );
   }
 }

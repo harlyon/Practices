@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
+import fire from '../config/fire';
+import { Redirect } from "react-router-dom";
 
 class Login extends Component {
   state = {
     email: '',
-    password: ''
+    password: '',
+    redirect: false
   }
 
   handleChange = e => {
@@ -14,14 +17,19 @@ class Login extends Component {
 
   submitForm = e => {
     e.preventDefault();
-    e.target.name += " was-validated";
-  }
-
-  validate = () => {
-
+    fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
+      .then((u) => {
+        this.setState({redirect: true})
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   }
 
   render() {
+    if (this.state.redirect) {
+      return <Redirect to={"./property"} />;
+    }
     return (
       <div>
         <Navbar />
@@ -42,7 +50,6 @@ class Login extends Component {
                             onChange={this.handleChange}
                             className="form-control"
                             placeholder="Enter Email Address" />
-                        {/* <div className="errorMsg">{this.state.errors.emailid}</div> */}
                     </div>
                     <div className="form-group">
                       <label>Password <span className="text-danger">*</span></label>
@@ -52,9 +59,8 @@ class Login extends Component {
                              onChange={this.handleChange}
                              className="form-control"
                              placeholder="Enter Password" />
-                        {/* <div className="errorMsg">{this.state.errors.password}</div> */}
                     </div>
-                    <button type="submit" className="btn btn-primary btn-lg btn-block" value="SUbmit">Login</button>
+                    <button type="submit" className="btn btn-primary btn-lg btn-block" value="Submit">Login</button>
                   </form>
                 </div>
               </div>

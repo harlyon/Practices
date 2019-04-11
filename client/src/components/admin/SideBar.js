@@ -7,11 +7,11 @@ class SideBar extends Component {
         <div className="section-padding">
         <div className="container">
             <div className="row">
-            <nav class="nav user-side-bar">
-              <a class="nav-link disabled" href="/">Add Property</a>
-              <a class="nav-link disabled" href="/">Delete Property</a>
-              <a class="nav-link disabled" href="/">Edit Property</a>
-              <a class="nav-link disabled" href="/">All Property</a>
+            <nav className="nav user-side-bar">
+              <a className="nav-link disabled" href="/">Add Property</a>
+              <a className="nav-link disabled" href="/">Delete Property</a>
+              <a className="nav-link disabled" href="/">Edit Property</a>
+              <a className="nav-link disabled" href="/">All Property</a>
             </nav>
             {/* <div className="col-lg-2 col-md-4 user-side-bar">
               <div className="">
