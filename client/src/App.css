@@ -156,7 +156,7 @@ body {
   border: medium none;
   box-shadow: 0 5px 7px #e0e5e8;
   margin-bottom: 30px;
-  border-radius: 70px;
+  /* border-radius: 70px; */
   text-align: center;
 }
 
